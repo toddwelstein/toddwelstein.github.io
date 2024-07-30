@@ -28,7 +28,13 @@
   <!-- Add your site or application content here -->
   <p>Hello world! This is HTML5 Boilerplate.</p>
   <script>
-    
+       window.onload = function() {
+            window.parent.postMessage('Hello from iframe', 'https://www.example.com');
+        };
+
+        window.addEventListener('message', (event) => {
+            console.log('Message received:', event);
+        });
   </script>
 
 </body>
