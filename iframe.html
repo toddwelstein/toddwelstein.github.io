@@ -29,11 +29,11 @@
   <p>Hello world! This is HTML5 Boilerplate.</p>
   <script>
        window.onload = function() {
-            window.parent.postMessage('Hello from iframe', 'https://www.npr.org');
+            window.parent.postMessage('Hello from iframe', 'https://www-s1.npr.org');
         };
 
         window.addEventListener('message', (event) => {
-            console.log('Message received:', event);
+            console.log('This is from the iframe - Message received:', event);
         });
   </script>
 
