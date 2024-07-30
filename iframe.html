@@ -29,14 +29,12 @@
   <p>Hello world! This is HTML5 Boilerplate.</p>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-       window.onload = function() {
-                  window.parent.postMessage('Hello from iframe', 'https://www-s1.npr.org');
-              };
-
               window.addEventListener('message', (event) => {
                   console.log('This is from the iframe - Message received:', event);
               });
-});
+
+              window.parent.postMessage('Hello from iframe', 'https://www-s1.npr.org');
+    });
       
   </script>
 
