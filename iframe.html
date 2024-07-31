@@ -15,7 +15,7 @@
   <meta property="og:image" content="">
   <meta property="og:image:alt" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.ico" sizes="nany">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
@@ -28,6 +28,8 @@
   <!-- Add your site or application content here -->
   <p>Hello world! This is HTML5 Boilerplate.</p>
   <script>
+    console.log('parent window ', window.parent);
+
     document.addEventListener('DOMContentLoaded', function() {
               window.addEventListener('message', (event) => {
 
