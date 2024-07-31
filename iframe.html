@@ -28,11 +28,12 @@
   <!-- Add your site or application content here -->
   <p>Hello world! This is HTML5 Boilerplate.</p>
   <script>
+    debugger;
+    
     console.log('parent window ', window.parent);
 
     document.addEventListener('DOMContentLoaded', function() {
               window.addEventListener('message', (event) => {
-
                   if (event.origin !== 'https://www-s1.npr.org') {
                     return;
                   }
